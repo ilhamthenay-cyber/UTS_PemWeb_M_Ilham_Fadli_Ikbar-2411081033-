@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>D4 Animasi - Politeknik Negeri Padang</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <style>
+        /* Sedikit gaya tambahan agar konsisten */
+        body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+        .card-hover { transition: transform .25s ease, box-shadow .25s ease; }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 18px 40px rgba(0,0,0,0.12); }
+        .rounded-curve { border-radius: 20px; }
+        .hero-gradient { background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); }
+        .topbar-gradient { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .badge-rounded { border-radius: 999px; }
+        footer { background: #0f1724; color: #cbd5e1; }
+        .social-circle { width:44px; height:44px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background: rgba(255,255,255,0.06); }
+        .back-to-top { position: fixed; right: 18px; bottom: 18px; z-index: 9999; display: none; }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="topbar-gradient py-2">
+        <div class="container text-end">
+            <a href="https://www.facebook.com/teknologiinformasipnp/?locale=id_ID" target="_blank" class="text-white text-decoration-none me-3" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/teknologiinformasipnp/" target="_blank" class="text-white text-decoration-none me-3" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@teknologiinformasi-politek6397" target="_blank" class="text-white text-decoration-none me-3" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="text-white text-decoration-none" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #1a1a2e; box-shadow: 0 2px 15px rgba(0,0,0,0.1);">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="asset/logoanimasi.png" alt="Logo D4 Animasi" height="50" onerror="this.src='https://via.placeholder.com/150x50?text=Logo'">
+                <span class="ms-2">D4 Animasi</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index-new.html">Home</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="visi-misi-new.html">Visi & Misi</a></li>
+                            <li><a class="dropdown-item" href="sejarah-new.html">Sejarah</a></li>
+                            <li><a class="dropdown-item" href="struktur-organisasi-new.html">Struktur Organisasi</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Program Studi</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="tekkom-new.html">D3 Teknik Komputer</a></li>
+                            <li><a class="dropdown-item" href="tekkom-psdku-new.html">D3 Teknik Komputer (PSDKU Solok Selatan)</a></li>
+                            <li><a class="dropdown-item" href="mi-new.html">D3 Manajemen Informatika</a></li>
+                            <li><a class="dropdown-item" href="mi-pelalawan-new.html">D3 Manajemen Informatika (PSDKU Pelalawan)</a></li>
+                            <li><a class="dropdown-item" href="si-new.html">D3 Sistem Informasi (PSDKU Tanah Datar)</a></li>
+                            <li><a class="dropdown-item" href="trpl-new.html">D4 Teknologi Rekayasa Perangkat Lunak</a></li>
+                            <li><a class="dropdown-item" href="animasi-new.html">D4 Animasi</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Akademik</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="kalender-new.html">Kalender Akademik</a></li>
+                            <li><a class="dropdown-item" href="akreditasi-new.html">Akreditasi</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Penelitian</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="jurnal-new.html">Jurnal</a></li>
+                            <li><a class="dropdown-item" href="akademi-new.html">Akademi</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="hubungi-kami-new.html">Hubungi Kami</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient text-white text-center py-5">
+        <div class="container py-4">
+            <h1 class="display-3 fw-bold mb-3"><i class="fas fa-palette me-3"></i>D4 Animasi</h1>
+            <p class="lead fs-4 mb-3">Program Sarjana Terapan - Politeknik Negeri Padang</p>
+            <span class="badge bg-light text-dark px-4 py-2 fs-6 badge-rounded">
+                <i class="fas fa-award me-2"></i>Kreativitas & Teknologi
+            </span>
+        </div>
+    </header>
+
+    <!-- Deskripsi Section -->
+    <main>
+        <section class="container my-5">
+            <div class="p-5 bg-white rounded-curve" style="box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <h2 class="fw-bold mb-4 pb-3 position-relative">
+                    <i class="fas fa-info-circle me-2" style="color: #667eea;"></i>Deskripsi Program Studi
+                    <span class="position-absolute bottom-0 start-0" style="width: 80px; height: 4px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></span>
+                </h2>
+                <p class="fs-5 text-muted lh-lg">Program Studi Sarjana Terapan (D4) Animasi dirancang untuk menghasilkan profesional kreatif yang menguasai seni dan teknologi animasi. Program ini membekali mahasiswa dengan keterampilan dalam pembuatan animasi 2D dan 3D, visual effects, motion graphics, game art, serta storytelling visual. Dengan pendekatan praktis dan berbasis industri, lulusan siap berkarir di industri kreatif baik di studio animasi, game development, periklanan, film, maupun sebagai freelance animator.</p>
+            </div>
+        </section>
+
+        <!-- Visi Misi Section -->
+        <section class="container my-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold d-inline-block position-relative pb-3">
+                    Visi, Misi & Tujuan
+                    <span class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 100px; height: 4px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></span>
+                </h2>
+            </div>
+
+            <div class="mb-4">
+                <div class="p-5 text-white rounded-curve" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                    <h3 class="fw-bold mb-4 text-center"><i class="fas fa-eye me-2"></i>Visi</h3>
+                    <blockquote class="text-center fs-5 mb-0 lh-lg">
+                        <p class="fst-italic">"Menjadi program studi unggul dalam bidang animasi yang menghasilkan lulusan kreatif, inovatif, dan berdaya saing global di industri kreatif pada tahun 2030."</p>
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="h-100 p-4 bg-white rounded-curve" style="box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                        <h3 class="fw-bold mb-4" style="color: #667eea;"><i class="fas fa-bullseye me-2"></i>Misi</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3 pb-3" style="border-bottom: 1px solid #f0f0f0;">
+                                <i class="fas fa-check-circle me-2" style="color: #764ba2;"></i>
+                                Menyelenggarakan pendidikan vokasi berkualitas di bidang animasi dengan menggabungkan seni, desain, dan teknologi.
+                            </li>
+                            <li class="mb-3 pb-3" style="border-bottom: 1px solid #f0f0f0;">
+                                <i class="fas fa-check-circle me-2" style="color: #764ba2;"></i>
+                                Melaksanakan penelitian dan pengembangan karya animasi yang inovatif dan berkualitas tinggi.
+                            </li>
+                            <li class="mb-3 pb-3" style="border-bottom: 1px solid #f0f0f0;">
+                                <i class="fas fa-check-circle me-2" style="color: #764ba2;"></i>
+                                Melaksanakan pengabdian kepada masyarakat melalui edukasi dan pengembangan industri kreatif lokal.
+                            </li>
+                            <li class="mb-0">
+                                <i class="fas fa-check-circle me-2" style="color: #764ba2;"></i>
+                                Menjalin kerjasama dengan industri animasi, studio produksi, dan institusi kreatif untuk meningkatkan kompetensi lulusan.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="h-100 p-4 bg-white rounded-curve" style="box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                        <h3 class="fw-bold mb-4" style="color: #667eea;"><i class="fas fa-target me-2"></i>Tujuan</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3 pb-3" style="border-bottom: 1px solid #f0f0f0;">
+                                <i class="fas fa-star me-2" style="color: #f093fb;"></i>
+                                Menghasilkan lulusan yang kompeten di bidang animasi dan siap berkarya di industri kreatif.
+                            </li>
+                            <li class="mb-3 pb-3" style="border-bottom: 1px solid #f0f0f0;">
+                                <i class="fas fa-star me-2" style="color: #f093fb;"></i>
+                                Menghasilkan karya animasi yang berkualitas dan bermanfaat bagi masyarakat dan industri.
+                            </li>
+                            <li class="mb-3 pb-3" style="border-bottom: 1px solid #f0f0f0;">
+                                <i class="fas fa-star me-2" style="color: #f093fb;"></i>
+                                Meningkatkan apresiasi dan literasi masyarakat terhadap animasi dan industri kreatif.
+                            </li>
+                            <li class="mb-0">
+                                <i class="fas fa-star me-2" style="color: #f093fb;"></i>
+                                Mewujudkan kemitraan strategis dengan industri untuk mendukung ekosistem animasi Indonesia.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profil Lulusan -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold d-inline-block position-relative pb-3">
+                        <i class="fas fa-user-graduate me-2" style="color: #667eea;"></i>Profil Lulusan
+                        <span class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 100px; height: 4px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></span>
+                    </h2>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Cards (6 profil lulusan) -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 card-hover rounded-curve">
+                            <div class="card-body text-center p-4">
+                                <div class="mb-3" style="font-size: 3.5rem; color: #667eea;">
+                                    <i class="fas fa-film"></i>
+                                </div>
+                                <h5 class="card-title fw-bold mb-3">2D Animator</h5>
+                                <p class="card-text text-muted">Mampu menciptakan animasi 2D untuk film, serial, iklan, dan konten digital dengan teknik tradisional dan digital.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 card-hover rounded-curve">
+                            <div class="card-body text-center p-4">
+                                <div class="mb-3" style="font-size: 3.5rem; color: #764ba2;">
+                                    <i class="fas fa-cube"></i>
+                                </div>
+                                <h5 class="card-title fw-bold mb-3">3D Animator/Modeler</h5>
+                                <p class="card-text text-muted">Mampu membuat modeling, rigging, dan animasi 3D untuk film, game, dan visualisasi produk.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 card-hover rounded-curve">
+                            <div class="card-body text-center p-4">
+                                <div class="mb-3" style="font-size: 3.5rem; color: #f093fb;">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <h5 class="card-title fw-bold mb-3">Motion Graphics Designer</h5>
+                                <p class="card-text text-muted">Mampu merancang dan menganimasikan grafis bergerak untuk video, broadcast, dan media digital.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 card-hover rounded-curve">
+                            <div class="card-body text-center p-4">
+                                <div class="mb-3" style="font-size: 3.5rem; color: #f5576c;">
+                                    <i class="fas fa-gamepad"></i>
+                                </div>
+                                <h5 class="card-title fw-bold mb-3">Game Artist</h5>
+                                <p class="card-text text-muted">Mampu menciptakan aset visual untuk game termasuk karakter, environment, dan UI/UX game.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 card-hover rounded-curve">
+                            <div class="card-body text-center p-4">
+                                <div class="mb-3" style="font-size: 3.5rem; color: #667eea;">
+                                    <i class="fas fa-magic"></i>
+                                </div>
+                                <h5 class="card-title fw-bold mb-3">Visual Effects Artist</h5>
+                                <p class="card-text text-muted">Mampu membuat efek visual untuk film, iklan, dan konten multimedia menggunakan compositing dan particle system.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 card-hover rounded-curve">
+                            <div class="card-body text-center p-4">
+                                <div class="mb-3" style="font-size: 3.5rem; color: #764ba2;">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </div>
+                                <h5 class="card-title fw-bold mb-3">Storyboard Artist</h5>
+                                <p class="card-text text-muted">Mampu merancang storyboard dan concept art untuk produksi animasi, film, dan iklan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Capaian Pembelajaran Section -->
+        <section class="container my-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold d-inline-block position-relative pb-3">
+                    <i class="fas fa-chart-line me-2" style="color: #667eea;"></i>Capaian Pembelajaran Lulusan
+                    <span class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 100px; height: 4px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></span>
+                </h2>
+            </div>
+
+            <div class="accordion" id="accordionCPL">
+                <div class="accordion-item mb-3 rounded-curve" style="border: none;">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSikap" aria-expanded="true" aria-controls="collapseSikap" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 15px;">
+                            <i class="fas fa-heart me-2"></i>Sikap
+                        </button>
+                    </h2>
+                    <div id="collapseSikap" class="accordion-collapse collapse show" data-bs-parent="#accordionCPL">
+                        <div class="accordion-body p-4">
+                            Lulusan diharapkan memiliki sikap bertakwa kepada Tuhan Yang Maha Esa, menjunjung tinggi nilai kemanusiaan, berperan aktif dalam kehidupan bermasyarakat, menghargai keanekaragaman budaya, serta menunjukkan sikap kreatif, inovatif, profesional, dan bertanggung jawab dalam berkarya di bidang animasi dengan memperhatikan aspek etika dan hak kekayaan intelektual.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item mb-3 rounded-curve" style="border: none;">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePengetahuan" aria-expanded="false" aria-controls="collapsePengetahuan" style="border-radius: 15px;">
+                            <i class="fas fa-book me-2" style="color: #667eea;"></i>Pengetahuan
+                        </button>
+                    </h2>
+                    <div id="collapsePengetahuan" class="accordion-collapse collapse" data-bs-parent="#accordionCPL">
+                        <div class="accordion-body p-4">
+                            Menguasai konsep teoritis seni rupa, desain, prinsip animasi, storytelling, cinematography, teknologi animasi 2D dan 3D, visual effects, serta pemahaman tentang industri kreatif dan manajemen produksi animasi.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item mb-3 rounded-curve" style="border: none;">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKeterampilan" aria-expanded="false" aria-controls="collapseKeterampilan" style="border-radius: 15px;">
+                            <i class="fas fa-tools me-2" style="color: #764ba2;"></i>Keterampilan Umum
+                        </button>
+                    </h2>
+                    <div id="collapseKeterampilan" class="accordion-collapse collapse" data-bs-parent="#accordionCPL">
+                        <div class="accordion-body p-4">
+                            Mampu menerapkan pemikiran kreatif, kritis, dan inovatif dalam konteks pengembangan karya animasi. Mampu bekerja secara mandiri maupun dalam tim produksi. Mampu berkomunikasi efektif dan mempresentasikan ide kreatif. Mampu mengikuti perkembangan teknologi dan tren industri animasi.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item rounded-curve" style="border: none;">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKeterampilanKhusus" aria-expanded="false" aria-controls="collapseKeterampilanKhusus" style="border-radius: 15px;">
+                            <i class="fas fa-star me-2" style="color: #f093fb;"></i>Keterampilan Khusus
+                        </button>
+                    </h2>
+                    <div id="collapseKeterampilanKhusus" class="accordion-collapse collapse" data-bs-parent="#accordionCPL">
+                        <div class="accordion-body p-4">
+                            Mampu membuat animasi 2D dan 3D dengan berbagai teknik dan software profesional. Mampu melakukan modeling, texturing, rigging, dan rendering 3D. Mampu membuat motion graphics dan visual effects. Mampu mengembangkan concept art dan storyboard. Mampu membuat aset game dan animasi interaktif. Mampu mengelola produksi animasi dari pre-production hingga post-production.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Software & Tools Section (Lanjutan & Lengkap) -->
+        <section class="py-5" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-5 text-white"><i class="fas fa-laptop-code me-2"></i>Software & Tools yang Dipelajari</h2>
+
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="text-center p-4 bg-white h-100 rounded-curve card-hover">
+                            <i class="fas fa-play-circle fa-3x mb-3" style="color: #667eea;"></i>
+                            <h5 class="fw-bold">Adobe Animate</h5>
+                            <p class="small text-muted mb-0">2D Animation</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="text-center p-4 bg-white h-100 rounded-curve card-hover">
+                            <i class="fas fa-cube fa-3x mb-3" style="color: #764ba2;"></i>
+                            <h5 class="fw-bold">Blender</h5>
+                            <p class="small text-muted mb-0">3D Modeling & Animation</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="text-center p-4 bg-white h-100 rounded-curve card-hover">
+                            <i class="fas fa-mountain fa-3x mb-3" style="color: #f093fb;"></i>
+                            <h5 class="fw-bold">Maya</h5>
+                            <p class="small text-muted mb-0">3D Animation & VFX</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="text-center p-4 bg-white h-100 rounded-curve card-hover">
+                            <i class="fas fa-layer-group fa-3x mb-3" style="color: #f5576c;"></i>
+                            <h5 class="fw-bold">After Effects</h5>
+                            <p class="small text-muted mb-0">Motion Graphics & VFX</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="text-center p-4 bg-white h-100 rounded-curve card-hover">
+                            <i class="fas fa-paint-brush fa-3x mb-3" style="color: #667eea;"></i>
+                            <h5 class="fw-bold">Photoshop</h5>
+                            <p class="small text-muted mb-0">Digital Painting & Texture</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="text-center p-4 bg-white h-100 rounded-curve card-hover">
+                            <i class="fas fa-vector-square fa-3x mb-3" style="color: #764ba2;"></i>
+                            <h5 class="fw-bold">Illustrator</h5>
+                            <p class="small text-muted mb-0">Vector Art & Concept Design</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="text-center p-4 bg-white h-100 rounded-curve card-hover">
+                            <i class="fas fa-code fa-3x mb-3" style="color: #f093fb;"></i>
+                            <h5 class="fw-bold">Unity / Unreal</h5>
+                            <p class="small text-muted mb-0">Interactive & Game Integration</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="text-center p-4 bg-white h-100 rounded-curve card-hover">
+                            <i class="fas fa-film fa-3x mb-3" style="color: #f5576c;"></i>
+                            <h5 class="fw-bold">Nuke / Fusion</h5>
+                            <p class="small text-muted mb-0">Compositing & High-end VFX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeri Singkat -->
+        <section class="container my-5">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold d-inline-block position-relative pb-3">Galeri Karya Mahasiswa</h2>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="rounded-curve overflow-hidden" style="height:220px; background:#eee;">
+                        <img src="asset/galeri1.jpg" alt="Karya 1" class="w-100 h-100 object-fit-cover" onerror="this.src='https://via.placeholder.com/600x400?text=Galeri+1'">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="rounded-curve overflow-hidden" style="height:220px; background:#eee;">
+                        <img src="asset/galeri2.jpg" alt="Karya 2" class="w-100 h-100 object-fit-cover" onerror="this.src='https://via.placeholder.com/600x400?text=Galeri+2'">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="rounded-curve overflow-hidden" style="height:220px; background:#eee;">
+                        <img src="asset/galeri3.jpg" alt="Karya 3" class="w-100 h-100 object-fit-cover" onerror="this.src='https://via.placeholder.com/600x400?text=Galeri+3'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontak / Footer CTA -->
+        <section class="py-5" style="background: linear-gradient(90deg,#111827,#0b1220); color:#e6eef8;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h3 class="fw-bold">Ingin tahu lebih jauh?</h3>
+                        <p class="mb-0">Hubungi kami untuk informasi pendaftaran, kurikulum, kolaborasi industri, dan kunjungan studio.</p>
+                    </div>
+                    <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                        <a href="hubungi-kami-new.html" class="btn btn-outline-light btn-lg rounded-curve">Kontak Kami</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-4">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <a href="#" class="d-flex align-items-center mb-3 text-white text-decoration-none">
+                        <img src="asset/logoanimasi.png" alt="Logo" height="46" onerror="this.src='https://via.placeholder.com/150x46?text=Logo'">
+                        <span class="ms-2">D4 Animasi - Politeknik Negeri Padang</span>
+                    </a>
+                    <p class="small text-muted">Program studi yang membentuk talenta kreatif di bidang animasi 2D/3D, VFX, motion graphics, dan game art.</p>
+                    <div class="mt-2">
+                        <a class="me-2 social-circle text-white" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="me-2 social-circle text-white" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="me-2 social-circle text-white" href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h6 class="text-white">Alamat</h6>
+                    <p class="small text-muted">Politeknik Negeri Padang — Jl. Kampus Politeknik, Pauh, Padang, Sumatera Barat</p>
+                    <p class="small mb-0"><i class="fas fa-phone me-2"></i> (+62) 0751-xxxxxx</p>
+                    <p class="small"><i class="fas fa-envelope me-2"></i> animasi@pnp.ac.id</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h6 class="text-white">Link Cepat</h6>
+                    <ul class="list-unstyled small">
+                        <li><a class="text-muted text-decoration-none" href="visi-misi-new.html">Visi & Misi</a></li>
+                        <li><a class="text-muted text-decoration-none" href="kalender-new.html">Kalender Akademik</a></li>
+                        <li><a class="text-muted text-decoration-none" href="jurnal-new.html">Jurnal & Penelitian</a></li>
+                        <li><a class="text-muted text-decoration-none" href="akreditasi-new.html">Akreditasi</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.06);">
+            <div class="text-center small">
+                &copy; <span id="year"></span> D4 Animasi — Politeknik Negeri Padang. Semua hak cipta dilindungi.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="btn btn-primary back-to-top rounded-circle" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // set year di footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // back-to-top
+        const backBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) backBtn.style.display = 'block';
+            else backBtn.style.display = 'none';
+        });
+        backBtn.addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
+
+        // simple active nav based on URL (highlight home if URI ends with index or root)
+        (function markActiveNav(){
+            const links = document.querySelectorAll('.navbar .nav-link');
+            links.forEach(a => {
+                try {
+                    if (a.href === window.location.href || window.location.href.includes(a.getAttribute('href'))) {
+                        a.classList.add('active');
+                    }
+                } catch(e){}
+            });
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalender Akademik - Teknologi Informasi</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 12px 0;">
+        <div class="container text-end">
+            <a href="https://www.facebook.com/teknologiinformasipnp/?locale=id_ID" target="_blank" class="text-white text-decoration-none me-3">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/teknologiinformasipnp/" target="_blank" class="text-white text-decoration-none me-3">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@teknologiinformasi-politek6397" target="_blank" class="text-white text-decoration-none me-3">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="text-white text-decoration-none">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #1a1a2e; box-shadow: 0 2px 15px rgba(0,0,0,0.1);">
+        <div class="container">
+            <a class="navbar-brand">
+                <img src="asset/logopnp.png" alt="Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index-new.html">Home</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                            Profil
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="visi-misi.html">Visi & Misi</a></li>
+                            <li><a class="dropdown-item" href="sejarah-new.html">Sejarah</a></li>
+                            <li><a class="dropdown-item" href="struktur-organisasi-new.html">Struktur Organisasi</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                            Program Studi
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="tekkom.html">D3 Teknik Komputer</a></li>
+                            <li><a class="dropdown-item" href="tekkom-psdku-new.html">D3 Teknik Komputer (PSDKU Solok Selatan)</a></li>
+                            <li><a class="dropdown-item" href="mi.html">D3 Manajemen Informatika</a></li>
+                            <li><a class="dropdown-item" href="mipelalawan.html">D3 Manajemen Informatika (PSDKU Pelalawan)</a></li>
+                            <li><a class="dropdown-item" href="SI.html">D3 Sistem Informasi (PSDKU Tanah Datar)</a></li>
+                            <li><a class="dropdown-item" href="trpl-new.html">D4 Teknologi Rekayasa Perangkat Lunak</a></li>
+                            <li><a class="dropdown-item" href="animasi.html">D4 Animasi</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                            Akademik
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="kalender-new.html">Kalender Akademik</a></li>
+                            <li><a class="dropdown-item" href="akreditasi-new.html">Akreditasi</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                            Penelitian
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="jurnal-new.html">Jurnal</a></li>
+                            <li><a class="dropdown-item" href="akademi-new.html">Akademi</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link">Hubungi Kami</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="text-center p-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+        <h1 class="display-4 fw-bold mb-3">
+            <i class="fas fa-calendar-alt me-3"></i>Kalender Akademik
+        </h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center mb-0" style="background: transparent;">
+                <li class="breadcrumb-item"><a href="index-new.html" class="text-white text-decoration-none"><i class="fas fa-home me-1"></i>Beranda</a></li>
+                <li class="breadcrumb-item text-white" aria-current="page">Kalender Akademik</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card border-0" style="border-radius: 25px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <div class="card-header text-white d-flex justify-content-between align-items-center p-4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none;">
+                        <h5 class="mb-0 fw-bold">
+                            <i class="fas fa-file-pdf me-2"></i>Dokumen Kalender Akademik
+                        </h5>
+                        <a href="asset/kalender_akademik.pdf" class="btn btn-light" style="border-radius: 15px; padding: 8px 20px;" download>
+                            <i class="fas fa-download me-2"></i>Download
+                        </a>
+                    </div>
+                    <div class="card-body p-0">
+                        <iframe src="asset/kalender_akademik.pdf" width="100%" height="700" class="border-0"></iframe>
+                    </div>
+                    <div class="card-footer text-center p-4" style="background-color: #f8f9fa; border: none;">
+                        <a href="asset/kalender_akademik.pdf" class="btn btn-lg text-white me-3" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%); border: none; border-radius: 15px; padding: 12px 30px; box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);" download>
+                            <i class="fas fa-download me-2"></i>Download PDF
+                        </a>
+                        <a href="asset/kalender_akademik.pdf" class="btn btn-lg text-white" style="background: linear-gradient(135deg, #17a2b8 0%, #138496 100%); border: none; border-radius: 15px; padding: 12px 30px; box-shadow: 0 5px 15px rgba(23, 162, 184, 0.3);" target="_blank">
+                            <i class="fas fa-external-link-alt me-2"></i>Buka di Tab Baru
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info Alert -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card border-0" style="border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-left: 5px solid #667eea;">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold mb-3" style="color: #667eea;">
+                            <i class="fas fa-info-circle me-2"></i>Informasi Penting
+                        </h5>
+                        <ul class="mb-0" style="line-height: 2;">
+                            <li><i class="fas fa-check-circle me-2" style="color: #28a745;"></i>Semua dokumen dalam format PDF</li>
+                            <li><i class="fas fa-check-circle me-2" style="color: #28a745;"></i>Jika tampilan PDF tidak muncul, silakan gunakan tombol Download</li>
+                            <li><i class="fas fa-check-circle me-2" style="color: #28a745;"></i>Untuk tampilan optimal, gunakan browser Chrome, Firefox, atau Edge versi terbaru</li>
+                            <li><i class="fas fa-check-circle me-2" style="color: #28a745;"></i>Pada perangkat mobile, dokumen mungkin otomatis didownload</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="row mt-5 g-4">
+            <div class="col-md-4">
+                <div class="card border-0 h-100" style="border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-3">
+                            <i class="fas fa-graduation-cap fa-4x" style="color: #667eea;"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Sistem Akademik</h5>
+                        <p class="text-muted mb-3">Akses sistem informasi akademik mahasiswa</p>
+                        <a href="https://siak.pnp.ac.id/" target="_blank" class="btn text-white" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none; border-radius: 15px; padding: 10px 25px;">
+                            <i class="fas fa-arrow-right me-2"></i>Buka SIAKAD
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-0 h-100" style="border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-3">
+                            <i class="fas fa-certificate fa-4x" style="color: #764ba2;"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Akreditasi</h5>
+                        <p class="text-muted mb-3">Lihat informasi akreditasi program studi</p>
+                        <a href="akreditasi-new.html" class="btn text-white" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none; border-radius: 15px; padding: 10px 25px;">
+                            <i class="fas fa-arrow-right me-2"></i>Lihat Akreditasi
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-0 h-100" style="border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-3">
+                            <i class="fas fa-book-open fa-4x" style="color: #f093fb;"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Pembelajaran</h5>
+                        <p class="text-muted mb-3">Akses platform pembelajaran daring SPADA</p>
+                        <a href="https://spadati.pnp.ac.id/login/index.php" target="_blank" class="btn text-white" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border: none; border-radius: 15px; padding: 10px 25px;">
+                            <i class="fas fa-arrow-right me-2"></i>Buka SPADA
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-white py-5 mt-5" style="background-color: #1a1a2e;">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <img src="asset/logo2.png" alt="Logo" height="40" class="mb-3">
+                    <p class="small">Kampus Politeknik Negeri Padang<br>
+                       Limau Manis Padang<br>
+                       Phone: 0751-72590</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-3">OUR ACADEMY</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Visi/Misi Academy</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Struktur Academy</a></li>
+                        <li class="mb-2"><a href="https://ti.pnp.ac.id/index.php/dosen-staf-pengajar/" target="_blank" class="text-white text-decoration-none">Daftar Dosen</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-3">USEFUL LINKS</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Academy</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Akreditasi</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Fasilitas</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-3">FOLLOW US</h5>
+                    <div class="d-flex gap-3">
+                        <a href="https://www.facebook.com/teknologiinformasipnp/?locale=id_ID" target="_blank" class="text-white text-decoration-none">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="https://www.instagram.com/teknologiinformasipnp/" target="_blank" class="text-white text-decoration-none">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@teknologiinformasi-politek6397" target="_blank" class="text-white text-decoration-none">
+                            <i class="fab fa-youtube fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.2);">
+            <p class="text-center mb-0">© 2025 Jurusan Teknologi Informasi - Politeknik Negeri Padang</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

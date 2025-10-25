@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3 Teknik Komputer - Politeknik Negeri Padang</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 12px 0;">
+        <div class="container text-end">
+            <a href="https://www.facebook.com/teknologiinformasipnp/?locale=id_ID" target="_blank" class="text-white text-decoration-none me-3">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/teknologiinformasipnp/" target="_blank" class="text-white text-decoration-none me-3">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@teknologiinformasi-politek6397" target="_blank" class="text-white text-decoration-none me-3">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="text-white text-decoration-none">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #1a1a2e; box-shadow: 0 2px 15px rgba(0,0,0,0.1);">
+        <div class="container">
+            <a class="navbar-brand">
+                <img src="asset/logoTK.png" alt="Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index-new.html">Home</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                            Profil
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="visi-misi.html">Visi & Misi</a></li>
+                            <li><a class="dropdown-item" href="sejarah-new.html">Sejarah</a></li>
+                            <li><a class="dropdown-item" href="struktur-organisasi-new.html">Struktur Organisasi</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                            Program Studi
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="tekkom.html">D3 Teknik Komputer</a></li>
+                            <li><a class="dropdown-item" href="tekkom-psdku-new.html">D3 Teknik Komputer (PSDKU Solok Selatan)</a></li>
+                            <li><a class="dropdown-item" href="mi.html">D3 Manajemen Informatika</a></li>
+                            <li><a class="dropdown-item" href="mipelalawan2.html">D3 Manajemen Informatika (PSDKU Pelalawan)</a></li>
+                            <li><a class="dropdown-item" href="si.html">D3 Sistem Informasi (PSDKU Tanah Datar)</a></li>
+                            <li><a class="dropdown-item" href="trpl-new.html">D4 Teknologi Rekayasa Perangkat Lunak</a></li>
+                            <li><a class="dropdown-item" href="animasi.html">D4 Animasi</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                            Akademik
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="kalender-new.html">Kalender Akademik</a></li>
+                            <li><a class="dropdown-item" href="akreditasi-new.html">Akreditasi</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                            Penelitian
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="jurnal-new.html">Jurnal</a></li>
+                            <li><a class="dropdown-item" href="akademi-new.html">Akademi</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link">Hubungi Kami</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="text-white text-center py-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <div class="container py-4">
+            <h1 class="display-3 fw-bold mb-3">
+                <i class="fas fa-microchip me-3"></i>D3 Teknik Komputer
+            </h1>
+            <p class="lead fs-4 mb-3">Program Diploma Tiga - Politeknik Negeri Padang</p>
+            <span class="badge bg-light text-dark px-4 py-2 fs-6">
+                <i class="fas fa-award me-2"></i>Hardware & Network Specialist
+            </span>
+        </div>
+    </div>
+
+    <!-- Deskripsi Section -->
+    <div class="container my-5">
+        <div class="p-5 bg-white" style="border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            <h2 class="fw-bold mb-4 pb-3 position-relative">
+                <i class="fas fa-info-circle me-2" style="color: #667eea;"></i>Deskripsi Program Studi
+                <span class="position-absolute bottom-0 start-0" style="width: 80px; height: 4px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></span>
+            </h2>
+            <p class="fs-5 text-muted lh-lg">Program Studi Diploma Tiga (D3) Teknik Komputer dirancang untuk menghasilkan tenaga ahli madya yang kompeten dalam bidang perangkat keras komputer, sistem embedded, jaringan komputer, dan teknologi IoT. Program ini membekali mahasiswa dengan keterampilan praktis dalam merakit, menginstalasi, mengkonfigurasi, memelihara sistem komputer dan jaringan, serta mengembangkan solusi berbasis teknologi embedded system dan Internet of Things untuk mendukung transformasi digital di industri.</p>
+        </div>
+    </div>
+
+    <!-- Visi Misi Section -->
+    <div class="container my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold d-inline-block position-relative pb-3">
+                Visi, Misi & Tujuan
+                <span class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 100px; height: 4px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></span>
+            </h2>
+        </div>
+
+        <!-- Visi Card -->
+        <div class="mb-4">
+            <div class="p-5 text-white" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                <h3 class="fw-bold mb-4 text-center">
+                    <i class="fas fa-eye me-2"></i>Visi
+                </h3>
+                <blockquote class="text-center fs-5 mb-0 lh-lg">
+                    <p class="fst-italic">"Menjadi program studi yang unggul dalam bidang teknik komputer yang menghasilkan lulusan profesional, inovatif, dan berdaya saing global pada tahun 2030."</p>
+                </blockquote>
+            </div>
+        </div>
+
+        <!-- Misi & Tujuan -->
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="h-100 p-4 bg-white" style="border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <h3 class="fw-bold mb-4" style="color: #667eea;">
+                        <i class="fas fa-bullseye me-2"></i>Misi
+                    </h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 pb-3" style="border-bottom: 1px solid #f0f0f0;">
+                            <i class="fas fa-check-circle me-2" style="color: #764ba2;"></i>
+                            Menyelenggarakan pendidikan vokasi yang berkualitas di bidang teknik komputer dengan fokus pada perangkat keras, jaringan, dan embedded system.
+                        </li>
+                        <li class="mb-3 pb-3" style="border-bottom: 1px solid #f0f0f0;">
+                            <i class="fas fa-check-circle me-2" style="color: #764ba2;"></i>
+                            Melaksanakan penelitian terapan yang mendukung pengembangan teknologi komputer dan IoT.
+                        </li>
+                        <li class="mb-3 pb-3" style="border-bottom: 1px solid #f0f0f0;">
+                            <i class="fas fa-check-circle me-2" style="color: #764ba2;"></i>
+                            Melaksanakan pengabdian kepada masyarakat melalui pemanfaatan teknologi komputer untuk meningkatkan kualitas hidup.
+                        </li>
+                        <li class="mb-0">
+                            <i class="fas fa-check-circle me-2" style="color: #764ba2;"></i>
+                            Membangun kerjasama strategis dengan industri, pemerintah, dan institusi untuk meningkatkan kompetensi lulusan.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="h-100 p-4 bg-white" style="border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <h3 class="fw-bold mb-4" style="color: #667eea;">
+                        <i class="fas fa-target me-2"></i>Tujuan
+                    </h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 pb-3" style="border-bottom: 1px solid #f0f0f0;">
+                            <i class="fas fa-star me-2" style="color: #f093fb;"></i>
+                            Menghasilkan lulusan yang kompeten di bidang teknik komputer dan siap kerja di industri.
+                        </li>
+                        <li class="mb-3 pb-3" style="border-bottom: 1px solid #f0f0f0;">
+                            <i class="fas fa-star me-2" style="color: #f093fb;"></i>
+                            Menghasilkan karya penelitian terapan yang memberikan solusi teknologi komputer bagi industri dan masyarakat.
+                        </li>
+                        <li class="mb-3 pb-3" style="border-bottom: 1px solid #f0f0f0;">
+                            <i class="fas fa-star me-2" style="color: #f093fb;"></i>
+                            Meningkatkan peran program studi dalam pemberdayaan masyarakat melalui teknologi komputer.
+                        </li>
+                        <li class="mb-0">
+                            <i class="fas fa-star me-2" style="color: #f093fb;"></i>
+                            Mewujudkan kemitraan yang berkelanjutan untuk mendukung pengembangan program studi dan kompetensi lulusan.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profil Lulusan Section -->
+    <div class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold d-inline-block position-relative pb-3">
+                    <i class="fas fa-user-graduate me-2" style="color: #667eea;"></i>Profil Lulusan
+                    <span class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 100px; height: 4px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></span>
+                </h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3" style="font-size: 3.5rem; color: #667eea;">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Computer Hardware Technician</h5>
+                            <p class="card-text text-muted">Mampu merakit, menginstalasi, mengkonfigurasi, dan memperbaiki perangkat keras komputer serta sistem komputer.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3" style="font-size: 3.5rem; color: #764ba2;">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Network Engineer</h5>
+                            <p class="card-text text-muted">Mampu merancang, mengimplementasikan, dan mengelola infrastruktur jaringan komputer baik LAN maupun WAN.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3" style="font-size: 3.5rem; color: #f093fb;">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">System Administrator</h5>
+                            <p class="card-text text-muted">Mampu mengelola, memelihara, dan mengoptimalkan sistem operasi server dan infrastruktur IT organisasi.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3" style="font-size: 3.5rem; color: #f5576c;">
+                                <i class="fas fa-memory"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Embedded System Developer</h5>
+                            <p class="card-text text-muted">Mampu merancang dan mengembangkan sistem embedded menggunakan mikrokontroler dan mikroprosesor.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3" style="font-size: 3.5rem; color: #667eea;">
+                                <i class="fas fa-wifi"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">IoT Specialist</h5>
+                            <p class="card-text text-muted">Mampu mengembangkan dan mengimplementasikan solusi Internet of Things untuk berbagai aplikasi industri.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Capaian Pembelajaran Section -->
+    <div class="container my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold d-inline-block position-relative pb-3">
+                <i class="fas fa-chart-line me-2" style="color: #667eea;"></i>Capaian Pembelajaran Lulusan
+                <span class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 100px; height: 4px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></span>
+            </h2>
+        </div>
+
+        <div class="accordion" id="accordionCPL">
+            <div class="accordion-item mb-3" style="border-radius: 15px; border: none; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                <h2 class="accordion-header">
+                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSikap" style="border-radius: 15px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                        <i class="fas fa-heart me-2"></i>Sikap
+                    </button>
+                </h2>
+                <div id="collapseSikap" class="accordion-collapse collapse show" data-bs-parent="#accordionCPL">
+                    <div class="accordion-body p-4">
+                        Lulusan diharapkan memiliki sikap bertakwa kepada Tuhan Yang Maha Esa, menjunjung tinggi nilai kemanusiaan, berperan aktif dalam kehidupan bermasyarakat, menghargai keanekaragaman budaya, serta menunjukkan sikap bertanggung jawab, disiplin, teliti, dan profesional dalam menjalankan tugas di bidang teknik komputer dengan memperhatikan aspek keselamatan kerja.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item mb-3" style="border-radius: 15px; border: none; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePengetahuan" style="border-radius: 15px;">
+                        <i class="fas fa-book me-2" style="color: #667eea;"></i>Pengetahuan
+                    </button>
+                </h2>
+                <div id="collapsePengetahuan" class="accordion-collapse collapse" data-bs-parent="#accordionCPL">
+                    <div class="accordion-body p-4">
+                        Menguasai konsep teoritis arsitektur komputer, sistem digital, sistem operasi, jaringan komputer, embedded system, dan IoT yang diperlukan untuk menganalisis, merancang, mengimplementasikan, dan memelihara sistem komputer dan jaringan.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item mb-3" style="border-radius: 15px; border: none; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKeterampilan" style="border-radius: 15px;">
+                        <i class="fas fa-tools me-2" style="color: #764ba2;"></i>Keterampilan Umum
+                    </button>
+                </h2>
+                <div id="collapseKeterampilan" class="accordion-collapse collapse" data-bs-parent="#accordionCPL">
+                    <div class="accordion-body p-4">
+                        Mampu menyelesaikan pekerjaan berlingkup luas dengan menganalisis permasalahan teknis, memilih metode dan teknologi yang sesuai, serta mampu menunjukkan kinerja bermutu dan terukur. Mampu menyusun laporan hasil dan proses kerja secara akurat, mengomunikasikannya dengan efektif, serta mampu bekerja sama dalam tim dan bertanggung jawab atas pencapaian hasil kerja.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item" style="border-radius: 15px; border: none; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKeterampilanKhusus" style="border-radius: 15px;">
+                        <i class="fas fa-star me-2" style="color: #f093fb;"></i>Keterampilan Khusus
+                    </button>
+                </h2>
+                <div id="collapseKeterampilanKhusus" class="accordion-collapse collapse" data-bs-parent="#accordionCPL">
+                    <div class="accordion-body p-4">
+                        Mampu merakit, menginstalasi, dan mengkonfigurasi perangkat keras komputer. Mampu merancang dan mengimplementasikan jaringan komputer. Mampu mengelola sistem operasi server dan workstation. Mampu merancang dan mengembangkan sistem embedded menggunakan mikrokontroler. Mampu mengimplementasikan solusi IoT. Mampu melakukan troubleshooting dan maintenance sistem komputer dan jaringan.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kurikulum Section -->
+    <div class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold d-inline-block position-relative pb-3">
+                    <i class="fas fa-book-open me-2" style="color: #667eea;"></i>Struktur Kurikulum
+                    <span class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 100px; height: 4px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></span>
+                </h2>
+            </div>
+
+            <div class="p-4 bg-white" style="border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <div class="table-responsive">
+                    <table class="table table-hover table-bordered mb-0">
+                        <thead style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                            <tr>
+                                <th scope="col" class="text-center">#</th>
+                                <th scope="col">Kode MK</th>
+                                <th scope="col">Nama Mata Kuliah</th>
+                                <th scope="col" class="text-center">SKS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="text-center">1</th>
+                                <td>TK-101</td>
+                                <td>Arsitektur & Organisasi Komputer</td>
+                                <td class="text-center">3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-center">2</th>
+                                <td>TK-102</td>
+                                <td>Sistem Digital</td>
+                                <td class="text-center">4</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-center">3</th>
+                                <td>TK-103</td>
+                                <td>Pemrograman Dasar</td>
+                                <td class="text-center">3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-center">4</th>
+                                <td>TK-104</td>
+                                <td>Perakitan & Instalasi Komputer</td>
+                                <td class="text-center">4</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-center">5</th>
+                                <td>TK-201</td>
+                                <td>Sistem Operasi</td>
+                                <td class="text-center">3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-center">6</th>
+                                <td>TK-202</td>
+                                <td>Jaringan Komputer</td>
+                                <td class="text-center">4</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-center">7</th>
+                                <td>TK-203</td>
+                                <td>Mikrokontroler & Interface</td>
+                                <td class="text-center">4</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-center">8</th>
+                                <td>TK-204</td>
+                                <td>Administrasi Server</td>
+                                <td class="text-center">3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-center">9</th>
+                                <td>TK-301</td>
+                                <td>Sistem Embedded</td>
+                                <td class="text-center">4</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-center">10</th>
+                                <td>TK-302</td>
+                                <td>Internet of Things (IoT)</td>
+                                <td class="text-center">4</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-center">11</th>
+                                <td>TK-303</td>
+                                <td>Keamanan Jaringan</td>
+                                <td class="text-center">3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-center">12</th>
+                                <td>TK-304</td>
+                                <td>Wireless & Mobile Network</td>
+                                <td class="text-center">3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fasilitas Section -->
+    <div class="container my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold d-inline-block position-relative pb-3">
+                <i class="fas fa-building me-2" style="color: #667eea;"></i>Fasilitas Laboratorium
+                <span class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 100px; height: 4px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></span>
+            </h2>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-tools fa-3x mb-3" style="color: #667eea;"></i>
+                        <h5 class="card-title fw-bold mb-3">Lab Hardware</h5>
+                        <p class="card-text text-muted">Laboratorium perakitan dan perbaikan komputer dengan peralatan lengkap untuk praktikum hardware.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 border-0" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-network-wired fa-3x mb-3" style="color: #764ba2;"></i>
+                        <h5 class="card-title fw-bold mb-3">Lab Jaringan</h5>
+                        <p class="card-text text-muted">Laboratorium jaringan komputer dengan router, switch, dan perangkat networking profesional.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 border-0" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-microchip fa-3x mb-3" style="color: #f093fb;"></i>
+                        <h5 class="card-title fw-bold mb-3">Lab Embedded & IoT</h5>
+                        <p class="card-text text-muted">Laboratorium embedded system dan IoT dengan berbagai mikrokontroler dan sensor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-white py-5" style="background-color: #1a1a2e;">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <img src="asset/logo2.png" alt="Logo" height="40" class="mb-3">
+                    <p class="small">Kampus Politeknik Negeri Padang<br>
+                       Limau Manis Padang<br>
+                       Phone: 0751-72590</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-3">OUR ACADEMY</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Visi/Misi Academy</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Struktur Academy</a></li>
+                        <li class="mb-2"><a href="https://ti.pnp.ac.id/index.php/dosen-staf-pengajar/" target="_blank" class="text-white text-decoration-none">Daftar Dosen</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-3">USEFUL LINKS</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Academy</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Akreditasi</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Fasilitas</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-3">FOLLOW US</h5>
+                    <div class="d-flex gap-3">
+                        <a href="https://www.facebook.com/teknologiinformasipnp/?locale=id_ID" target="_blank" class="text-white text-decoration-none">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="https://www.instagram.com/teknologiinformasipnp/" target="_blank" class="text-white text-decoration-none">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@teknologiinformasi-politek6397" target="_blank" class="text-white text-decoration-none">
+                            <i class="fab fa-youtube fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.2);">
+            <p class="text-center mb-0">© 2025 Jurusan Teknologi Informasi - Politeknik Negeri Padang</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

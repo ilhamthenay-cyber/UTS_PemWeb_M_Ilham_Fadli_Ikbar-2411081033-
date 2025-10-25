@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3 Teknik Komputer PSDKU Solok Selatan - Politeknik Negeri Padang</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 12px 0;">
+        <div class="container text-end">
+            <a href="https://www.facebook.com/teknologiinformasipnp/?locale=id_ID" target="_blank" class="text-white text-decoration-none me-3">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/teknologiinformasipnp/" target="_blank" class="text-white text-decoration-none me-3">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@teknologiinformasi-politek6397" target="_blank" class="text-white text-decoration-none me-3">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="text-white text-decoration-none">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #1a1a2e; box-shadow: 0 2px 15px rgba(0,0,0,0.1);">
+        <div class="container">
+            <a class="navbar-brand">
+                <img src="asset/logoTK.png" alt="Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index-new.html">Home</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                            Profil
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="visi-misi.html">Visi & Misi</a></li>
+                            <li><a class="dropdown-item" href="sejarah-new.html">Sejarah</a></li>
+                            <li><a class="dropdown-item" href="struktur-organisasi-new.html">Struktur Organisasi</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                            Program Studi
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="tekkom.html">D3 Teknik Komputer</a></li>
+                            <li><a class="dropdown-item" href="tekkom-psdku-new.html">D3 Teknik Komputer (PSDKU Solok Selatan)</a></li>
+                            <li><a class="dropdown-item" href="mi.html">D3 Manajemen Informatika</a></li>
+                            <li><a class="dropdown-item" href="mipelalawan2.html">D3 Manajemen Informatika (PSDKU Pelalawan)</a></li>
+                            <li><a class="dropdown-item" href="si.html">D3 Sistem Informasi (PSDKU Tanah Datar)</a></li>
+                            <li><a class="dropdown-item" href="trpl-new.html">D4 Teknologi Rekayasa Perangkat Lunak</a></li>
+                            <li><a class="dropdown-item" href="animasi.html">D4 Animasi</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                            Akademik
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="kalender-new.html">Kalender Akademik</a></li>
+                            <li><a class="dropdown-item" href="akreditasi-new.html">Akreditasi</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                            Penelitian
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="jurnal-new.html">Jurnal</a></li>
+                            <li><a class="dropdown-item" href="akademi-new.html">Akademi</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link">Hubungi Kami</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="text-white text-center py-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <div class="container py-4">
+            <h1 class="display-3 fw-bold mb-3">
+                <i class="fas fa-microchip me-3"></i>D3 Teknik Komputer
+            </h1>
+            <p class="lead fs-4 mb-2">PSDKU Solok Selatan</p>
+            <p class="lead fs-5 mb-3">Politeknik Negeri Padang</p>
+            <span class="badge bg-light text-dark px-4 py-2 fs-6">
+                <i class="fas fa-map-marker-alt me-2"></i>Kampus PSDKU Solok Selatan
+            </span>
+        </div>
+    </div>
+
+    <!-- Tentang PSDKU Section -->
+    <div class="container my-5">
+        <div class="p-5 text-white" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+            <h2 class="fw-bold mb-4">
+                <i class="fas fa-building me-2"></i>Tentang PSDKU Solok Selatan
+            </h2>
+            <p class="fs-5 lh-lg mb-4">Program Studi di Luar Kampus Utama (PSDKU) Solok Selatan merupakan program perluasan akses pendidikan tinggi vokasi Politeknik Negeri Padang yang berlokasi di Kabupaten Solok Selatan, Sumatera Barat. PSDKU ini didirikan untuk memberikan kesempatan bagi masyarakat di wilayah Solok Selatan dan sekitarnya untuk mengakses pendidikan tinggi berkualitas tanpa harus meninggalkan daerah asal mereka.</p>
+            
+            <div class="row g-4 mt-2">
+                <div class="col-md-4">
+                    <div class="text-center p-4 bg-white h-100" style="border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);">
+                        <i class="fas fa-user-graduate fa-3x mb-3" style="color: #667eea;"></i>
+                        <h5 class="fw-bold text-dark">Pendidikan Vokasi Berkualitas</h5>
+                        <p class="text-muted mb-0">Standar pendidikan setara dengan kampus utama PNP</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-4 bg-white h-100" style="border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);">
+                        <i class="fas fa-users fa-3x mb-3" style="color: #764ba2;"></i>
+                        <h5 class="fw-bold text-dark">Akses Pendidikan</h5>
+                        <p class="text-muted mb-0">Memperluas akses pendidikan tinggi di daerah</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-4 bg-white h-100" style="border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);">
+                        <i class="fas fa-briefcase fa-3x mb-3" style="color: #f093fb;"></i>
+                        <h5 class="fw-bold text-dark">Siap Kerja</h5>
+                        <p class="text-muted mb-0">Lulusan siap bersaing di dunia industri</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Deskripsi Section -->
+    <div class="container my-5">
+        <div class="p-5 bg-white" style="border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            <h2 class="fw-bold mb-4 pb-3 position-relative">
+                <i class="fas fa-info-circle me-2" style="color: #667eea;"></i>Deskripsi Program Studi
+                <span class="position-absolute bottom-0 start-0" style="width: 80px; height: 4px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></span>
+            </h2>
+            <p class="fs-5 text-muted lh-lg mb-4">Program Studi Diploma Tiga (D3) Teknik Komputer PSDKU Solok Selatan dirancang untuk menghasilkan tenaga ahli madya yang kompeten dalam bidang perangkat keras komputer, sistem embedded, jaringan komputer, dan teknologi IoT. Program ini membekali mahasiswa dengan keterampilan praktis dalam merakit, menginstalasi, mengkonfigurasi, memelihara sistem komputer dan jaringan, serta mengembangkan solusi berbasis teknologi embedded system dan Internet of Things untuk mendukung transformasi digital di wilayah Solok Selatan dan sekitarnya serta industri secara nasional.</p>
+            
+            <div class="p-4" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 20px; color: white;">
+                <h5 class="fw-bold mb-3">
+                    <i class="fas fa-star me-2"></i>Keunggulan PSDKU
+                </h5>
+                <p class="mb-0">Mahasiswa mendapatkan pembelajaran dengan standar yang sama dengan kampus utama PNP di Padang, didukung oleh dosen-dosen berkualitas dan fasilitas laboratorium yang memadai, dengan biaya hidup yang lebih terjangkau di Solok Selatan.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Visi Misi Section -->
+    <div class="container my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold d-inline-block position-relative pb-3">
+                Visi, Misi & Tujuan
+                <span class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 100px; height: 4px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></span>
+            </h2>
+        </div>
+
+        <!-- Visi Card -->
+        <div class="mb-4">
+            <div class="p-5 text-white" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                <h3 class="fw-bold mb-4 text-center">
+                    <i class="fas fa-eye me-2"></i>Visi
+                </h3>
+                <blockquote class="text-center fs-5 mb-0 lh-lg">
+                    <p class="fst-italic">"Menjadi program studi yang unggul dalam bidang teknik komputer di wilayah Solok Selatan yang menghasilkan lulusan profesional, inovatif, dan berdaya saing global pada tahun 2030."</p>
+                </blockquote>
+            </div>
+        </div>
+
+        <!-- Misi & Tujuan -->
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="h-100 p-4 bg-white" style="border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <h3 class="fw-bold mb-4" style="color: #667eea;">
+                        <i class="fas fa-bullseye me-2"></i>Misi
+                    </h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 pb-3" style="border-bottom: 1px solid #f0f0f0;">
+                            <i class="fas fa-check-circle me-2" style="color: #764ba2;"></i>
+                            Menyelenggarakan pendidikan vokasi yang berkualitas di bidang teknik komputer dengan fokus pada perangkat keras, jaringan, dan embedded system.
+                        </li>
+                        <li class="mb-3 pb-3" style="border-bottom: 1px solid #f0f0f0;">
+                            <i class="fas fa-check-circle me-2" style="color: #764ba2;"></i>
+                            Melaksanakan penelitian terapan yang mendukung pengembangan teknologi komputer dan IoT untuk pembangunan daerah.
+                        </li>
+                        <li class="mb-3 pb-3" style="border-bottom: 1px solid #f0f0f0;">
+                            <i class="fas fa-check-circle me-2" style="color: #764ba2;"></i>
+                            Melaksanakan pengabdian kepada masyarakat Solok Selatan melalui pemanfaatan teknologi komputer untuk meningkatkan kualitas hidup.
+                        </li>
+                        <li class="mb-0">
+                            <i class="fas fa-check-circle me-2" style="color: #764ba2;"></i>
+                            Membangun kerjasama strategis dengan industri, pemerintah daerah, dan institusi untuk meningkatkan kompetensi lulusan.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="h-100 p-4 bg-white" style="border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <h3 class="fw-bold mb-4" style="color: #667eea;">
+                        <i class="fas fa-target me-2"></i>Tujuan
+                    </h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 pb-3" style="border-bottom: 1px solid #f0f0f0;">
+                            <i class="fas fa-star me-2" style="color: #f093fb;"></i>
+                            Menghasilkan lulusan yang kompeten di bidang teknik komputer dan siap kerja di industri lokal maupun nasional.
+                        </li>
+                        <li class="mb-3 pb-3" style="border-bottom: 1px solid #f0f0f0;">
+                            <i class="fas fa-star me-2" style="color: #f093fb;"></i>
+                            Menghasilkan karya penelitian terapan yang memberikan solusi teknologi komputer bagi pembangunan daerah Solok Selatan.
+                        </li>
+                        <li class="mb-3 pb-3" style="border-bottom: 1px solid #f0f0f0;">
+                            <i class="fas fa-star me-2" style="color: #f093fb;"></i>
+                            Meningkatkan peran program studi dalam pemberdayaan masyarakat lokal melalui teknologi komputer.
+                        </li>
+                        <li class="mb-0">
+                            <i class="fas fa-star me-2" style="color: #f093fb;"></i>
+                            Mewujudkan kemitraan yang berkelanjutan dengan stakeholder untuk mendukung pengembangan program studi dan ekonomi daerah.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profil Lulusan Section -->
+    <div class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold d-inline-block position-relative pb-3">
+                    <i class="fas fa-user-graduate me-2" style="color: #667eea;"></i>Profil Lulusan
+                    <span class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 100px; height: 4px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></span>
+                </h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3" style="font-size: 3.5rem; color: #667eea;">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Computer Hardware Technician</h5>
+                            <p class="card-text text-muted">Mampu merakit, menginstalasi, mengkonfigurasi, dan memperbaiki perangkat keras komputer serta sistem komputer.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3" style="font-size: 3.5rem; color: #764ba2;">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Network Engineer</h5>
+                            <p class="card-text text-muted">Mampu merancang, mengimplementasikan, dan mengelola infrastruktur jaringan komputer baik LAN maupun WAN.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3" style="font-size: 3.5rem; color: #f093fb;">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">System Administrator</h5>
+                            <p class="card-text text-muted">Mampu mengelola, memelihara, dan mengoptimalkan sistem operasi server dan infrastruktur IT organisasi.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3" style="font-size: 3.5rem; color: #f5576c;">
+                                <i class="fas fa-memory"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Embedded System Developer</h5>
+                            <p class="card-text text-muted">Mampu merancang dan mengembangkan sistem embedded menggunakan mikrokontroler dan mikroprosesor.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3" style="font-size: 3.5rem; color: #667eea;">
+                                <i class="fas fa-wifi"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">IoT Specialist</h5>
+                            <p class="card-text text-muted">Mampu mengembangkan dan mengimplementasikan solusi Internet of Things untuk berbagai aplikasi industri dan pertanian.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Capaian Pembelajaran Section -->
+    <div class="container my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold d-inline-block position-relative pb-3">
+                <i class="fas fa-chart-line me-2" style="color: #667eea;"></i>Capaian Pembelajaran Lulusan
+                <span class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 100px; height: 4px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></span>
+            </h2>
+        </div>
+
+        <div class="accordion" id="accordionCPL">
+            <div class="accordion-item mb-3" style="border-radius: 15px; border: none; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                <h2 class="accordion-header">
+                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSikap" style="border-radius: 15px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                        <i class="fas fa-heart me-2"></i>Sikap
+                    </button>
+                </h2>
+                <div id="collapseSikap" class="accordion-collapse collapse show" data-bs-parent="#accordionCPL">
+                    <div class="accordion-body p-4">
+                        Lulusan diharapkan memiliki sikap bertakwa kepada Tuhan Yang Maha Esa, menjunjung tinggi nilai kemanusiaan, berperan aktif dalam kehidupan bermasyarakat, menghargai keanekaragaman budaya, serta menunjukkan sikap bertanggung jawab, disiplin, teliti, dan profesional dalam menjalankan tugas di bidang teknik komputer dengan memperhatikan aspek keselamatan kerja.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item mb-3" style="border-radius: 15px; border: none; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePengetahuan" style="border-radius: 15px;">
+                        <i class="fas fa-book me-2" style="color: #667eea;"></i>Pengetahuan
+                    </button>
+                </h2>
+                <div id="collapsePengetahuan" class="accordion-collapse collapse" data-bs-parent="#accordionCPL">
+                    <div class="accordion-body p-4">
+                        Menguasai konsep teoritis arsitektur komputer, sistem digital, sistem operasi, jaringan komputer, embedded system, dan IoT yang diperlukan untuk menganalisis, merancang, mengimplementasikan, dan memelihara sistem komputer dan jaringan.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item mb-3" style="border-radius: 15px; border: none; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKeterampilan" style="border-radius: 15px;">
+                        <i class="fas fa-tools me-2" style="color: #764ba2;"></i>Keterampilan Umum
+                    </button>
+                </h2>
+                <div id="collapseKeterampilan" class="accordion-collapse collapse" data-bs-parent="#accordionCPL">
+                    <div class="accordion-body p-4">
+                        Mampu menyelesaikan pekerjaan berlingkup luas dengan menganalisis permasalahan teknis, memilih metode dan teknologi yang sesuai, serta mampu menunjukkan kinerja bermutu dan terukur. Mampu menyusun laporan hasil dan proses kerja secara akurat, mengomunikasikannya dengan efektif, serta mampu bekerja sama dalam tim dan bertanggung jawab atas pencapaian hasil kerja.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item" style="border-radius: 15px; border: none; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKeterampilanKhusus" style="border-radius: 15px;">
+                        <i class="fas fa-star me-2" style="color: #f093fb;"></i>Keterampilan Khusus
+                    </button>
+                </h2>
+                <div id="collapseKeterampilanKhusus" class="accordion-collapse collapse" data-bs-parent="#accordionCPL">
+                    <div class="accordion-body p-4">
+                        Mampu merakit, menginstalasi, dan mengkonfigurasi perangkat keras komputer. Mampu merancang dan mengimplementasikan jaringan komputer. Mampu mengelola sistem operasi server dan workstation. Mampu merancang dan mengembangkan sistem embedded menggunakan mikrokontroler. Mampu mengimplementasikan solusi IoT untuk berbagai aplikasi termasuk smart agriculture dan smart city. Mampu melakukan troubleshooting dan maintenance sistem komputer dan jaringan.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kurikulum Section -->
+    <div class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold d-inline-block position-relative pb-3">
+                    <i class="fas fa-book-open me-2" style="color:#f093fb;">
+                    </i>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold d-inline-block position-relative pb-3">
+                    <i class="fas fa-book-open me-2" style="color: #667eea;"></i>Struktur Kurikulum
+                    <span class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 100px; height: 4px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></span>
+                </h2>
+                <p class="text-muted fs-5">Program pembelajaran 6 semester dengan total 112 SKS</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Semester 1 -->
+                <div class="col-md-6">
+                    <div class="card h-100 border-0" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                        <div class="card-header text-white text-center py-3" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px 20px 0 0;">
+                            <h4 class="mb-0 fw-bold"><i class="fas fa-calendar-alt me-2"></i>Semester 1</h4>
+                        </div>
+                        <div class="card-body p-4">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: #667eea;"></i>Matematika Teknik</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: #667eea;"></i>Fisika Teknik</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: #667eea;"></i>Pemrograman Dasar</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: #667eea;"></i>Sistem Digital</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: #667eea;"></i>Bahasa Inggris</li>
+                                <li class="mb-0"><i class="fas fa-check-circle me-2" style="color: #667eea;"></i>Pendidikan Pancasila</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Semester 2 -->
+                <div class="col-md-6">
+                    <div class="card h-100 border-0" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                        <div class="card-header text-white text-center py-3" style="background: linear-gradient(135deg, #764ba2 0%, #f093fb 100%); border-radius: 20px 20px 0 0;">
+                            <h4 class="mb-0 fw-bold"><i class="fas fa-calendar-alt me-2"></i>Semester 2</h4>
+                        </div>
+                        <div class="card-body p-4">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: #764ba2;"></i>Arsitektur Komputer</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: #764ba2;"></i>Pemrograman Berorientasi Objek</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: #764ba2;"></i>Elektronika Digital</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: #764ba2;"></i>Sistem Operasi</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: #764ba2;"></i>Bahasa Indonesia</li>
+                                <li class="mb-0"><i class="fas fa-check-circle me-2" style="color: #764ba2;"></i>Kewarganegaraan</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Semester 3 -->
+                <div class="col-md-6">
+                    <div class="card h-100 border-0" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                        <div class="card-header text-white text-center py-3" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 20px 20px 0 0;">
+                            <h4 class="mb-0 fw-bold"><i class="fas fa-calendar-alt me-2"></i>Semester 3</h4>
+                        </div>
+                        <div class="card-body p-4">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: #f093fb;"></i>Jaringan Komputer</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: #f093fb;"></i>Mikrokontroler</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: #f093fb;"></i>Basis Data</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: #f093fb;"></i>Perawatan PC & Troubleshooting</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: #f093fb;"></i>Web Programming</li>
+                                <li class="mb-0"><i class="fas fa-check-circle me-2" style="color: #f093fb;"></i>Manajemen Proyek TI</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Semester 4 -->
+                <div class="col-md-6">
+                    <div class="card h-100 border-0" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                        <div class="card-header text-white text-center py-3" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px 20px 0 0;">
+                            <h4 class="mb-0 fw-bold"><i class="fas fa-calendar-alt me-2"></i>Semester 4</h4>
+                        </div>
+                        <div class="card-body p-4">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: #667eea;"></i>Administrasi Jaringan</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: #667eea;"></i>Sistem Embedded</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: #667eea;"></i>Internet of Things (IoT)</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: #667eea;"></i>Keamanan Jaringan</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: #667eea;"></i>Mobile Programming</li>
+                                <li class="mb-0"><i class="fas fa-check-circle me-2" style="color: #667eea;"></i>Technopreneurship</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Semester 5 -->
+                <div class="col-md-6">
+                    <div class="card h-100 border-0" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                        <div class="card-header text-white text-center py-3" style="background: linear-gradient(135deg, #764ba2 0%, #f093fb 100%); border-radius: 20px 20px 0 0;">
+                            <h4 class="mb-0 fw-bold"><i class="fas fa-calendar-alt me-2"></i>Semester 5</h4>
+                        </div>
+                        <div class="card-body p-4">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: #764ba2;"></i>Kerja Praktik (KP)</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: #764ba2;"></i>Metodologi Penelitian</li>
+                                <li class="mb-0"><i class="fas fa-check-circle me-2" style="color: #764ba2;"></i>Mata Kuliah Pilihan</li>
+                            </ul>
+                            <div class="alert alert-info mt-3 mb-0" style="border-radius: 15px;">
+                                <i class="fas fa-info-circle me-2"></i>
+                                <small>Semester ini fokus pada pengalaman kerja industri</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Semester 6 -->
+                <div class="col-md-6">
+                    <div class="card h-100 border-0" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                        <div class="card-header text-white text-center py-3" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 20px 20px 0 0;">
+                            <h4 class="mb-0 fw-bold"><i class="fas fa-calendar-alt me-2"></i>Semester 6</h4>
+                        </div>
+                        <div class="card-body p-4">
+                            <ul class="list-unstyled">
+                                <li class="mb-0"><i class="fas fa-check-circle me-2" style="color: #f5576c;"></i>Tugas Akhir (TA)</li>
+                            </ul>
+                            <div class="alert alert-success mt-3 mb-0" style="border-radius: 15px;">
+                                <i class="fas fa-graduation-cap me-2"></i>
+                                <small>Semester ini fokus pada penyelesaian Tugas Akhir</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fasilitas Section -->
+    <div class="container my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold d-inline-block position-relative pb-3">
+                <i class="fas fa-building me-2" style="color: #667eea;"></i>Fasilitas
+                <span class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 100px; height: 4px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></span>
+            </h2>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="text-center p-4 h-100" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                    <i class="fas fa-laptop fa-4x text-white mb-3"></i>
+                    <h5 class="fw-bold text-white mb-3">Laboratorium Komputer</h5>
+                    <p class="text-white mb-0">Dilengkapi dengan PC modern dan perangkat pendukung pembelajaran</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center p-4 h-100" style="background: linear-gradient(135deg, #764ba2 0%, #f093fb 100%); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                    <i class="fas fa-network-wired fa-4x text-white mb-3"></i>
+                    <h5 class="fw-bold text-white mb-3">Lab Jaringan Komputer</h5>
+                    <p class="text-white mb-0">Fasilitas lengkap untuk praktik instalasi dan konfigurasi jaringan</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center p-4 h-100" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                    <i class="fas fa-microchip fa-4x text-white mb-3"></i>
+                    <h5 class="fw-bold text-white mb-3">Lab Embedded System</h5>
+                    <p class="text-white mb-0">Peralatan untuk pengembangan sistem embedded dan IoT</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center p-4 h-100" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                    <i class="fas fa-book-reader fa-4x text-white mb-3"></i>
+                    <h5 class="fw-bold text-white mb-3">Perpustakaan</h5>
+                    <p class="text-white mb-0">Koleksi buku dan jurnal untuk mendukung pembelajaran</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center p-4 h-100" style="background: linear-gradient(135deg, #764ba2 0%, #f093fb 100%); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                    <i class="fas fa-wifi fa-4x text-white mb-3"></i>
+                    <h5 class="fw-bold text-white mb-3">Internet & WiFi</h5>
+                    <p class="text-white mb-0">Akses internet berkecepatan tinggi di seluruh kampus</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center p-4 h-100" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                    <i class="fas fa-chalkboard-teacher fa-4x text-white mb-3"></i>
+                    <h5 class="fw-bold text-white mb-3">Ruang Kelas Modern</h5>
+                    <p class="text-white mb-0">Ruang kelas ber-AC dengan proyektor dan sound system</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Prospek Karir Section -->
+    <div class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold d-inline-block position-relative pb-3">
+                    <i class="fas fa-briefcase me-2" style="color: #667eea;"></i>Prospek Karir
+                    <span class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 100px; height: 4px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></span>
+                </h2>
+                <p class="text-muted fs-5">Peluang karir luas di berbagai bidang industri</p>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-md-3 col-sm-6">
+                    <div class="p-3 text-center bg-white h-100" style="border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                        <i class="fas fa-building fa-2x mb-2" style="color: #667eea;"></i>
+                        <p class="mb-0 fw-bold">Perusahaan IT</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="p-3 text-center bg-white h-100" style="border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                        <i class="fas fa-industry fa-2x mb-2" style="color: #764ba2;"></i>
+                        <p class="mb-0 fw-bold">Industri Manufaktur</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="p-3 text-center bg-white h-100" style="border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                        <i class="fas fa-university fa-2x mb-2" style="color: #f093fb;"></i>
+                        <p class="mb-0 fw-bold">Lembaga Pemerintahan</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="p-3 text-center bg-white h-100" style="border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                        <i class="fas fa-hospital fa-2x mb-2" style="color: #f5576c;"></i>
+                        <p class="mb-0 fw-bold">Rumah Sakit</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="p-3 text-center bg-white h-100" style="border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                        <i class="fas fa-graduation-cap fa-2x mb-2" style="color: #667eea;"></i>
+                        <p class="mb-0 fw-bold">Institusi Pendidikan</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="p-3 text-center bg-white h-100" style="border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                        <i class="fas fa-hotel fa-2x mb-2" style="color: #764ba2;"></i>
+                        <p class="mb-0 fw-bold">Hotel & Pariwisata</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="p-3 text-center bg-white h-100" style="border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                        <i class="fas fa-store fa-2x mb-2" style="color: #f093fb;"></i>
+                        <p class="mb-0 fw-bold">Retail & E-Commerce</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="p-3 text-center bg-white h-100" style="border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                        <i class="fas fa-lightbulb fa-2x mb-2" style="color: #f5576c;"></i>
+                        <p class="mb-0 fw-bold">Startup & Wirausaha</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kontak & Lokasi Section -->
+    <div class="container my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold d-inline-block position-relative pb-3">
+                <i class="fas fa-map-marker-alt me-2" style="color: #667eea;"></i>Kontak & Lokasi
+                <span class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 100px; height: 4px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></span>
+            </h2>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="p-5 h-100" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                    <h3 class="text-white fw-bold mb-4">
+                        <i class="fas fa-info-circle me-2"></i>Informasi Kontak
+                    </h3>
+                    <div class="text-white">
+                        <div class="mb-4">
+                            <h5 class="fw-bold mb-2"><i class="fas fa-map-marker-alt me-2"></i>Alamat</h5>
+                            <p class="mb-0">PSDKU Politeknik Negeri Padang<br>Kabupaten Solok Selatan<br>Sumatera Barat, Indonesia</p>
+                        </div>
+                        <div class="mb-4">
+                            <h5 class="fw-bold mb-2"><i class="fas fa-phone me-2"></i>Telepon</h5>
+                            <p class="mb-0">+62 751 xxxx xxxx</p>
+                        </div>
+                        <div class="mb-4">
+                            <h5 class="fw-bold mb-2"><i class="fas fa-envelope me-2"></i>Email</h5>
+                            <p class="mb-0">psdku.solokselatan@pnp.ac.id</p>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-2"><i class="fas fa-globe me-2"></i>Website</h5>
+                            <p class="mb-0">www.pnp.ac.id</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="p-5 bg-white h-100" style="border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <h3 class="fw-bold mb-4" style="color: #667eea;">
+                        <i class="fas fa-user-plus me-2"></i>Pendaftaran
+                    </h3>
+                    <p class="text-muted mb-4">Bergabunglah dengan kami dan wujudkan karir di bidang teknologi komputer!</p>
+                    <div class="d-grid gap-3">
+                        <a href="#" class="btn btn-lg text-white" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);">
+                            <i class="fas fa-file-alt me-2"></i>Info Pendaftaran
+                        </a>
+                        <a href="#" class="btn btn-lg text-white" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 15px; box-shadow: 0 5px 15px rgba(240, 147, 251, 0.4);">
+                            <i class="fas fa-download me-2"></i>Download Brosur
+                        </a>
+                    </div>
+                    <div class="mt-4 p-3" style="background-color: #f8f9fa; border-radius: 15px;">
+                        <p class="mb-0 text-center"><i class="fas fa-info-circle me-2" style="color: #667eea;"></i>Jalur penerimaan: SNBP, SNBT, dan Mandiri</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-white py-5" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">D3 Teknik Komputer</h5>
+                    <p class="mb-3">Program studi vokasi yang menghasilkan tenaga ahli kompeten di bidang teknik komputer, jaringan, dan embedded system.</p>
+                    <div>
+                        <a href="#" class="text-white text-decoration-none me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white text-decoration-none me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white text-decoration-none me-3"><i class="fab fa-youtube fa-lg"></i></a>
+                        <a href="#" class="text-white text-decoration-none"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Link Cepat</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none"><i class="fas fa-angle-right me-2"></i>Tentang Kami</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none"><i class="fas fa-angle-right me-2"></i>Program Studi</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none"><i class="fas fa-angle-right me-2"></i>Pendaftaran</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none"><i class="fas fa-angle-right me-2"></i>Berita</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Kontak Kami</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>Kabupaten Solok Selatan, Sumbar</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i>+62 751 xxxx xxxx</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i>psdku.solokselatan@pnp.ac.id</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 D3 Teknik Komputer PSDKU Solok Selatan - Politeknik Negeri Padang. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
